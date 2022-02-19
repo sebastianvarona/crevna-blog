@@ -3,7 +3,7 @@ import ContactForm from "../../components/contact-form";
 import Layout from "../../components/Layout"
 
 export default function Home() {
-    let lang = 'es'
+    let lang = 'en'
     return (
         <Layout lang={lang}>
         <div className="container mx-auto px-4  md:px-10">
@@ -12,7 +12,7 @@ export default function Home() {
             </h1>
             <div className="py-6"></div>
             <p class="text-xl pb-8">
-                Todos los comentarios o sugerencias sobre el sitio son totalmente bienvenidas. Por favor si tienes algo que decirme contáctame y te respondere tan rapido como pueda.
+                All feedback about the site is welcome. Please get in touch with me I will reply to you as soon as I can.
             </p>
             <ContactForm lang={lang} />
             <div className="pb-16"></div>
