@@ -32,7 +32,7 @@ export default function Navbar(props) {
 
     return (
         <nav className="bg-background text-primary border-b border-border fixed top-0 left-0 w-screen shadow-md z-10">
-            <div className="container mx-auto px-2 sm:px-6 lg:px-8">
+            <div className="container max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
                 <div className="flex items-center justify-between h-16">
                     
                     {/* Mobile menu icon */}
@@ -51,7 +51,7 @@ export default function Navbar(props) {
                     {/* Desktop */}
                     <div className="flex-1 hidden sm:flex min-h-full">
                         {/* Logo */}
-                        <div className="logo flex items-center border-r border-border pr-5">
+                        <div className="logo flex items-center border-r border-border pr-5 cursor-pointer">
                             <Link href={`/${props.lang}`}>
                                 <img src='/images/logo-text.svg' alt="crevna" className="h-4"/>
                             </Link>

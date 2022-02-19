@@ -16,10 +16,10 @@ export default function Layout({lang, children}) {
 					{ children }
 				</div>
 			</main>
-            <footer class="py-8 border-t border-border flex flex-col">    
+            <footer className="py-8 border-t border-border flex flex-col">    
                 <img src='/images/logo-text.svg' alt="crevna" className="h-6" />
 				
-                <p class="text-primary text-center mt-5">
+                <p className="text-tcolor text-center mt-5">
 					{lang === 'es' ? 'Hecho por Sebastian Varona' : 'Crafted by Sebastian Varona'}
                 </p>
             </footer>
