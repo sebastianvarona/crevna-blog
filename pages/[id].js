@@ -73,7 +73,7 @@ export default function Post({allPostsData, postRequested}) {
                             <li key={post.id}>                                  
                                 <div className='block mt-4'>
                                     {post.tags.split('---').map((tag, index) => (
-                                        <Link href={`/${postRequested.lang}/${tag.toLowerCase()}`} key={index}>
+                                        <Link href={`/${postRequested.lang}/${postRequested.lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                             <a className="text-accent text-sm hover:underline mr-2">{tag}</a>
                                         </Link>
                                     ))}

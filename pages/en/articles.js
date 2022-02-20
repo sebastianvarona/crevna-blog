@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import Button from "../../components/Button";
-import CardOne from "../../components/card-one";
-import Cards from "../../components/cards";
+import Image from "next/image"
+import Link from "next/link"
+import CardOne from "../../components/card-one"
+import Cards from "../../components/cards"
 import Layout from "../../components/Layout"
 import { getSortedPostsData } from '../../lib/posts'
 

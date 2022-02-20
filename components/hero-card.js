@@ -21,7 +21,7 @@ export default function HeroCard({lang, date, tags, title, extract, slug, img}) 
                     <span class="text-xs">{date}</span>
                     <div class="tags d-flex flex-wrap mb-2">
                         {arrTags.map((tag, index) => (
-                            <Link href={`/${lang}/${tag.toLowerCase()}`} key={index}>
+                            <Link href={`/${lang}/${lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                 <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                             </Link>
                         ))}

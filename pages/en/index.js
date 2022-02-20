@@ -64,7 +64,7 @@ export default function Home({ allPostsData }) {
                                 <span class="text-xs">{article.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                 <div class="tags d-flex flex-wrap">
                                     {article.tags.split('---').map((tag, index) => (
-                                        <Link href={`/${lang}/${tag.toLowerCase()}`} key={index}>
+                                        <Link href={`/${lang}/${lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                             <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                                         </Link>
                                     ))}
@@ -78,8 +78,8 @@ export default function Home({ allPostsData }) {
                     ))}
                 </Cards>
                 <div className="flex justify-center mt-16">
-                    <Link href="/es/articulos">
-                        <a><Button>Todos los artículos</Button></a>
+                    <Link href="/en/articles">
+                        <a><Button>All articles</Button></a>
                     </Link>
                 </div>
             </div>
@@ -100,7 +100,7 @@ export default function Home({ allPostsData }) {
                                     <span class="text-xs">{tutorial.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                     <div class="tags d-flex flex-wrap">
                                         {tutorial.tags.split('---').map((tag, index) => (
-                                            <Link href={`/${lang}/${tag.toLowerCase()}`} key={index}>
+                                            <Link href={`/${lang}/${lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                                 <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                                             </Link>
                                         ))}
@@ -115,8 +115,8 @@ export default function Home({ allPostsData }) {
                     </Cards>
                     </div>
                     <div className="flex justify-center mt-16">
-                        <Link href="/es/tutoriales">
-                            <a><Button>Todos los tutoriales</Button></a>
+                        <Link href="/en/tutorials">
+                            <a><Button>All tutorials</Button></a>
                         </Link>
                 </div>
             </div>

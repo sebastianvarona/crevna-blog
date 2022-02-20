@@ -28,10 +28,11 @@
   pre{
     @apply bg-border rounded-lg px-7 py-5
   }
-
+  html {
+    @apply bg-background
+  }
 
 }
-
 
 html,
 body {
