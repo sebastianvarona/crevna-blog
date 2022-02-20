@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import Layout from '../components/layout'
 import { getAllPostIds, getSortedPostsData, getPostData  } from '../lib/posts'
+import Prism from 'prismjs'
+import { useEffect } from 'react'
+import ReactMarkdown from 'react-markdown'
+
 
 export async function getStaticProps({params}) {
     const postRequested = await getPostData(params.id)
@@ -17,6 +20,10 @@ export async function getStaticProps({params}) {
 }
 
 export default function Post({allPostsData, postRequested}) {
+    
+    useEffect(() => {
+        Prism.highlightAll()
+    }, [])
 
     const tags = postRequested.tags.split('---')
     let lastPosts = []
@@ -49,7 +56,10 @@ export default function Post({allPostsData, postRequested}) {
                         <div className='bg-border rounded-lg relative aspect-16/9 overflow-hidden mb-12 mt-4'>
                             <Image src={`/images/${postRequested.img}`} layout='fill' objectFit='cover' />
                         </div>
-                        <div className='text-tcolor' dangerouslySetInnerHTML={{ __html: postRequested.contentHtml }} />
+                        <div>
+                        <ReactMarkdown children={postRequested.markdown} />
+                        </div>
+                        {/* <div className='text-tcolor' dangerouslySetInnerHTML={{ __html: postRequested.contentHtml }} /> */}
                     </article>
                 </div>
                 {/* Aside */}
@@ -58,7 +68,7 @@ export default function Post({allPostsData, postRequested}) {
                     <div class="h-64 bg-border rounded-lg mb-8"></div>
                     {/* END AD SPACE */}
                     <h4 class="font-bold text-xl mb-4">Latest Posts</h4>
-                    <ul>
+                    <ul className='list-none'>
                         {lastPosts.slice(0,5).map((post) => (
                             <li key={post.id}>                                  
                                 <div className='block mt-4'>

@@ -15,8 +15,15 @@ Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
 
 ### Example code snippet
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
+```javascript
+export async function getStaticProps({params}) {
+    const postRequested = await getPostData(params.id)
+    const allPostsData = getSortedPostsData()
+    return {
+        props: {
+            postRequested,
+            allPostsData
+        }
+    }
+}
 ```
