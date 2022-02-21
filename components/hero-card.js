@@ -27,7 +27,7 @@ export default function HeroCard({lang, date, tags, title, extract, slug, img}) 
                         ))}
                     </div>
                     <h1 className="text-5xl font-semibold pb-8">{title}</h1>
-                    <p className="font-light pb-8">{extract}</p>
+                    {/* <p className="font-light pb-8">{extract}</p> */}
                     <Link href={slugPath}>
                         <a><Button>
                             {lang === 'es' ? 'Leer más' : 'Read more'}
