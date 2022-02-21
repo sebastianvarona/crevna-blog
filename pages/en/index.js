@@ -48,7 +48,7 @@ export default function Home({ allPostsData }) {
                     extract="Lorem ninja ipsum dolor sit ame, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
                     // slug={heroArticle.frontmatter.slug}
                     slug={articles[0].id}
-                    img={<Image src={`/images/${articles[0].img}`} objectFit="cover" layout='fill' />}
+                    img={<Image alt='thumbnail' src={`/images/${articles[0].img}`} objectFit="cover" layout='fill' />}
                 />
 
                 <div className="py-4"></div>
@@ -59,7 +59,7 @@ export default function Home({ allPostsData }) {
                             <CardOne 
                                 slug={article.id} 
                                 key={article.id}
-                                img={<Image src={`/images/${article.img}`} objectFit="cover" layout='fill' />}
+                                img={<Image alt='thumbnail' src={`/images/${article.img}`} objectFit="cover" layout='fill' />}
                             >
                                 <span class="text-xs">{article.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                 <div class="tags d-flex flex-wrap">
@@ -95,7 +95,7 @@ export default function Home({ allPostsData }) {
                                 <CardOne 
                                     slug={tutorial.id} 
                                     key={tutorial.id}
-                                    img={<Image src={`/images/${tutorial.img}`} objectFit="cover" layout='fill' />}
+                                    img={<Image alt='thumbnail' src={`/images/${tutorial.img}`} objectFit="cover" layout='fill' />}
                                 >
                                     <span class="text-xs">{tutorial.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                     <div class="tags d-flex flex-wrap">
