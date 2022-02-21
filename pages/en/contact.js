@@ -11,7 +11,7 @@ export default function Home() {
                 {lang === 'es' ? 'Contacto' : 'Contact'}
             </h1>
             <div className="py-6"></div>
-            <p class="text-xl pb-8">
+            <p className="text-xl pb-8">
                 All feedback about the site is welcome. Please get in touch with me I will reply to you as soon as I can.
             </p>
             <ContactForm lang={lang} />

@@ -42,7 +42,7 @@ export default function Post({allPostsData, postRequested}) {
                 <div className='md:basis-2/3'>
                     <article>
                         {/* TAGS */}
-                        <div class="tags d-flex flex-wrap mb-2 font-medium">
+                        <div className="tags d-flex flex-wrap mb-2 font-medium">
                             {tags.map((tag, index) => (
                                 <Link href={`/${postRequested.lang}/${postRequested.lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                     <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
@@ -63,9 +63,9 @@ export default function Post({allPostsData, postRequested}) {
                     </article>
                 </div>
                 {/* Aside */}
-                <aside class="hidden md:block flex-none basis-1/3">
+                <aside className="hidden md:block flex-none basis-1/3">
                     {/* AD SPACE */}
-                    <div class="h-64 bg-border rounded-lg mb-8"></div>
+                    <div className="h-64 bg-border rounded-lg mb-8"></div>
                     {/* END AD SPACE */}
                     <h4 class="font-bold text-xl mb-4">Latest Posts</h4>
                     <ul className='list-none'>
