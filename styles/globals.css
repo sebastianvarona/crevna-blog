@@ -37,6 +37,9 @@
   article a{
     @apply text-accent underline hover:decoration-dotted
   }
+  article p{
+    @apply text-tcolor
+  }
 
 }
 
