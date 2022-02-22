@@ -16,7 +16,8 @@ module.exports = {
             'border' : '#303030',
             'primary' : '#f8f9fa',
             'secondary' : '#7A7A7A',
-            'tcolor' : '#E2E2E2',
+            // 'tcolor' : '#E2E2E2',
+            'tcolor' : '#E0E0E0',
             'accent' : '#ff7a00'
         },
         aspectRatio: {
