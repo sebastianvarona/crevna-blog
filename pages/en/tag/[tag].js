@@ -4,7 +4,7 @@ import Image from "next/image"
 import Link from "next/link"
 import CardOne from "../../../components/card-one"
 import Cards from "../../../components/cards"
-import Layout from "../../../components/Layout"
+import Layout from "../../../components/layout"
 import Head from 'next/head'
 
 
