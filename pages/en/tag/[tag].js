@@ -58,7 +58,7 @@ export default function Home({allPostsData}) {
                                         </Link>
                                     ))}
                                 </div>
-                                <Link href={post.id}>
+                                <Link href={`/${post.id}`}>
                                     <a>
                                         <h3 className="text-2xl font-semibold pb-0 hover:underline">{post.title}</h3>
                                     </a>
