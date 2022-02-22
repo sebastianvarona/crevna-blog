@@ -20,7 +20,6 @@ export async function getStaticProps({params}) {
 }
 
 export default function Post({allPostsData, postRequested}) {
-    
     useEffect(() => {
         Prism.highlightAll()
     }, [])
@@ -57,7 +56,9 @@ export default function Post({allPostsData, postRequested}) {
                             <Image alt='thumbnail' src={`/images/${postRequested.img}`} layout='fill' objectFit='cover' />
                         </div>
                         <div>
-                        <ReactMarkdown children={postRequested.markdown} />
+                        <ReactMarkdown>
+                            {postRequested.markdown}
+                        </ReactMarkdown>
                         </div>
                         {/* <div className='text-tcolor' dangerouslySetInnerHTML={{ __html: postRequested.contentHtml }} /> */}
                     </article>
@@ -65,9 +66,9 @@ export default function Post({allPostsData, postRequested}) {
                 {/* Aside */}
                 <aside className="hidden md:block flex-none basis-1/3">
                     {/* AD SPACE */}
-                    <div className="h-64 bg-border rounded-lg mb-8"></div>
+                    <div className="h-64 bg-[#101010] rounded-lg mb-8"></div>
                     {/* END AD SPACE */}
-                    <h4 class="font-bold text-xl mb-4">Latest Posts</h4>
+                    <h4 className="font-bold text-xl mb-4">Latest Posts</h4>
                     <ul className='list-none'>
                         {lastPosts.slice(0,5).map((post) => (
                             <li key={post.id}>                                  

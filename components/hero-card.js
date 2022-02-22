@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import Button from "./button"
 
@@ -9,25 +8,26 @@ export default function HeroCard({lang, date, tags, title, extract, slug, img}) 
     return (
         <div className="grid lg:grid-cols-2 gap-12 text-primary">
             <Link href={slugPath}>
-                <div className="min-h-8 rounded-lg overflow-hidden bg-border bg-center bg-cover relative cursor-pointer">
+                <div className="min-h-8 aspect-16/10 rounded-lg overflow-hidden bg-border bg-center bg-cover relative cursor-pointer">
                     {img}
                     <div className="absolute top-0 left-0 w-full h-full bg-background transition-all flex items-center justify-center opacity-0 hover:opacity-100 bg-opacity-60">
                         <span className="text-lg cursor-pointer hover:underline bg-primary text-background px-3 font-semibold">{lang === 'en'? 'Read more' : 'Leer más'}</span>
                     </div>
                 </div>
             </Link>
-            <div className="sm:py-8">
-                <div className="text d-flex flex-col">
+            <div className="flex">
+                <div className="text d-flex flex-col self-center">
                     <span className="text-xs">{date}</span>
                     <div className="tags d-flex flex-wrap mb-2">
                         {arrTags.map((tag, index) => (
                             <Link href={`/${lang}/${lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
-                                <a classNameName="text-accent text-sm hover:underline mr-4">{tag}</a>
+                                <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                             </Link>
                         ))}
                     </div>
-                    <h1 classNameName="text-5xl font-semibold pb-8">{title}</h1>
-                    {/* <p classNameName="font-light pb-8">{extract}</p> */}
+                    {/* Title */}
+                    <h1 className="text-5xl font-semibold pb-8">{title}</h1>
+                    {/* <p className="font-light pb-8">{extract}</p> */}
                     <Link href={slugPath}>
                         <a><Button>
                             {lang === 'es' ? 'Leer más' : 'Read more'}
