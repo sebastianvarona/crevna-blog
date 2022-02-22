@@ -40,12 +40,12 @@ export default function Home({ allPostsData }) {
                                 <span className="text-xs">{article.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                 <div className="tags d-flex flex-wrap">
                                     {article.tags.split('---').map((tag, index) => (
-                                        <Link href={`/${lang}/${tag.toLowerCase()}`} key={index}>
+                                        <Link href={`/${lang}/${lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                             <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                                         </Link>
                                     ))}
                                 </div>
-                                <Link href={`/${post.id}`}>
+                                <Link href={`/${article.id}`}>
                                     <a>
                                         <h3 className="text-2xl font-semibold pb-0 hover:underline">{article.title}</h3>
                                     </a>
