@@ -43,5 +43,5 @@ Algunas especificaciónes:
 - Bases de datos administradas
 - Red privada
 
-## What VPS is best for you?
+## Cual opción de VPS es mejor para ti?
 Después de haber estudiado qué planes tienen todas estas 5 opciones de hosting que te interesan. Ahora debes considerar qué recursos necesitas y cuánto estás dispuesto a gastar. Si desea muchas especificaciones, debes estar más que preparado para gastar un poco más. También puedes empezar con un presupuesto apretado y escalar tu plan de alojamiento cuando sea necesario, de esta manera puedes ahorrar algo de dinero mientras haces crecer tu proyecto.
