@@ -13,9 +13,9 @@ return {
 
 export default function Home() {
     return (
-        <div className="h-screen bg-background flex">
-            <div className="flex-1 h-full flex flex-col items-end justify-center">
-                <h2 className="text-7xl text-right w-full text-primary font-bold mb-8">Welcome</h2>
+        <div className="h-screen bg-background flex md:flex-row flex-col">
+            <div className="flex-1 md:h-full flex flex-col items-center md:items-end justify-center">
+                <h2 className="text-center text-4xl md:text-7xl md:text-right w-full text-primary font-bold mb-8">Welcome</h2>
                 <Button>
                     <Link href="en">
                         <a>Continue in english</a>
@@ -23,9 +23,9 @@ export default function Home() {
                 </Button>
             </div>
             <div className="border border-border mx-20"></div>
-            <div className="flex-1 h-full flex items-center justify-start">
-                <div >
-                    <h2 className="text-7xl text-center w-full text-primary font-bold mb-8">Bienvenido</h2>
+            <div className="flex-1 md:h-full flex items-center justify-start">
+                <div className="flex-1 md:h-full flex flex-col items-center md:items-start justify-center">
+                    <h2 className="text-4xl md:text-7xl text-center md:text-left w-full text-primary font-bold mb-8">Bienvenido</h2>
                     <Button>
                         <Link href="es">
                             <a>Continuar en español</a>
