@@ -69,7 +69,7 @@ export default function Home({ allPostsData }) {
                                         </Link>
                                     ))}
                                 </div>
-                                <Link href={`/${post.id}`}>
+                                <Link href={`/${article.id}`}>
                                     <a>
                                         <h3 className="text-2xl font-semibold pb-0 hover:underline">{article.title}</h3>
                                     </a>
@@ -105,7 +105,7 @@ export default function Home({ allPostsData }) {
                                             </Link>
                                         ))}
                                     </div>
-                                    <Link href={`/${post.id}`}>
+                                    <Link href={`/${tutorial.id}`}>
                                         <a>
                                             <h3 className="text-2xl font-semibold pb-0 hover:underline">{tutorial.title}</h3>
                                         </a>

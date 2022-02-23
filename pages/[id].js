@@ -56,7 +56,7 @@ export default function Post({allPostsData, postRequested}) {
                             <Image alt='thumbnail' src={`/images/${postRequested.img}`} layout='fill' objectFit='cover' />
                         </div>
                         <div>
-                        <ReactMarkdown>
+                        <ReactMarkdown renderers={{"image": Image}}>
                             {postRequested.markdown}
                         </ReactMarkdown>
                         </div>
