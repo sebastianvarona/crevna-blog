@@ -6,6 +6,7 @@ export default function Layout({lang, children}) {
 	return (
 		<div className="layout min-h-screen bg-background">
             <Head>
+				<html lang={lang} />
                 <title>Crevna</title>
             </Head>
 			<header>
