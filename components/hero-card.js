@@ -6,7 +6,7 @@ export default function HeroCard({lang, date, tags, title, extract, slug, img}) 
     let arrTags = tags.split('---')
 
     return (
-        <div className="grid lg:grid-cols-2 gap-12 text-primary">
+        <div className="grid md:grid-cols-2 gap-12 text-primary">
             <Link href={slugPath}>
                 <div className="min-h-8 aspect-16/10 rounded-lg overflow-hidden bg-border bg-center bg-cover relative cursor-pointer">
                     {img}
@@ -26,10 +26,15 @@ export default function HeroCard({lang, date, tags, title, extract, slug, img}) 
                         ))}
                     </div>
                     {/* Title */}
-                    <h1 className="text-4xl md:text-5xl font-semibold pb-8">{title}</h1>
+                    <Link href={slugPath}>
+                        <a className="md:hidden">
+                            <h3 className="text-4xl font-semibold pb-0 hover:underline">{title}</h3>
+                        </a>
+                    </Link>
+                    <h1 className="text-4xl md:text-5xl font-semibold pb-8 hidden md:block">{title}</h1>
                     {/* <p className="font-light pb-8">{extract}</p> */}
                     <Link href={slugPath}>
-                        <a><Button>
+                        <a className='hidden md:block'><Button>
                             {lang === 'es' ? 'Leer más' : 'Read more'}
                         </Button></a>
                     </Link>
