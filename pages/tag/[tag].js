@@ -1,10 +1,10 @@
 import { useRouter } from 'next/router'
-import { getSortedPostsData, getAllPostTags } from '../../../lib/posts'
+import { getSortedPostsData, getAllPostTags } from '../../lib/posts'
 import Image from "next/image"
 import Link from "next/link"
-import CardOne from "../../../components/card-one"
-import Cards from "../../../components/cards"
-import Layout from "../../../components/layout"
+import CardOne from "../../components/card-one"
+import Cards from "../../components/cards"
+import Layout from "../../components/layout"
 import Head from 'next/head'
 
 
