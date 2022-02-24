@@ -19,10 +19,10 @@ export default function Navbar(props) {
             break
         case 'en':
             links = [
-                { title: 'Home', path: '/en' },
-                { title: 'Tutorials', path: '/en/tutorials' },
-                { title: 'Articles', path: '/en/articles' },
-                { title: 'Contact', path: '/en/contact' }
+                { title: 'Home', path: '/' },
+                { title: 'Tutorials', path: '/tutorials' },
+                { title: 'Articles', path: '/articles' },
+                { title: 'Contact', path: '/contact' }
             ]
             break
         default:
