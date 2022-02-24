@@ -40,7 +40,7 @@ export default function Home({ allPostsData }) {
                                 <span className="text-xs">{tutorial.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                 <div className="tags d-flex flex-wrap">
                                     {tutorial.tags.split('---').map((tag, index) => (
-                                        <Link href={`/${lang}/${lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
+                                        <Link href={`/${lang === 'es' ? 'es/etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                             <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                                         </Link>
                                     ))}
