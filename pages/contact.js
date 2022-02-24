@@ -1,5 +1,5 @@
-import ContactForm from "../../components/contact-form";
-import Layout from "../../components/layout"
+import ContactForm from "../components/contact-form";
+import Layout from "../components/layout"
 
 export default function Home() {
     let lang = 'en'
