@@ -68,7 +68,7 @@ export default function Post({allPostsData, postRequested}) {
                     {/* AD SPACE */}
                     <div className="h-64 bg-[#101010] rounded-lg mb-8"></div>
                     {/* END AD SPACE */}
-                    <h4 className="font-bold text-xl mb-4">Latest Posts</h4>
+                    <h4 className="font-bold text-xl mb-4">{`${postRequested.lang === 'es' ? 'Últimos' : 'Latest'} Posts`}</h4>
                     <ul className='list-none'>
                         {lastPosts.slice(0,5).map((post) => (
                             <li key={post.id}>                                  
