@@ -1,3 +1,4 @@
+import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import CardOne from "../../components/card-one";
@@ -25,6 +26,10 @@ export default function Home({ allPostsData }) {
     });
     return (
         <Layout lang={lang}>
+        <Head>
+            <title>Crevna - Tutoriales de Programación</title>
+            <meta name="description" content="Aquí encontrarás tutoriales sobre desarrollo Full Stack." />
+        </Head>
             <div className='container max-w-7xl mx-auto px-3 sm:px-6 lg:px-10 pb-16'>
                 <h1 className="text-4xl font-bold mb-16">
                     {lang === 'es'? `Tutoriales` : `Tutorials`}

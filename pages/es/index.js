@@ -6,6 +6,7 @@ import Cards from '../../components/cards'
 import CardOne from '../../components/card-one'
 import Button from '../../components/button'
 import Link from 'next/link'
+import Head from 'next/head'
 
 
 export async function getStaticProps() {
@@ -35,6 +36,10 @@ export default function Home({ allPostsData }) {
 
     return (
         <Layout lang={lang}>
+            <Head>
+                <title>Crevna - Artículos y Tutoriales sobre Programación</title>
+                <meta name="description" content="Un blog dirigido a desarrolladores donde encontrarás artículos y tutoriales sobre desarrollo Full Stack ." />
+            </Head>
             <div className="container mx-auto max-w-7xl px-3 sm:px-6 lg:px-10">
 
                 {/* Hero Article */}

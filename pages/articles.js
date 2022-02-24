@@ -1,10 +1,10 @@
+import Head from "next/head"
 import Image from "next/image"
 import Link from "next/link"
 import CardOne from "../components/card-one"
 import Cards from "../components/cards"
 import Layout from "../components/layout"
 import { getSortedPostsData } from '../lib/posts'
-
 
 export async function getStaticProps() {
     const allPostsData = getSortedPostsData()
@@ -25,6 +25,10 @@ export default function Home({ allPostsData }) {
     });
     return (
         <Layout lang={lang}>
+        <Head>
+            <title>Crevna - Programming Articles</title>
+            <meta name="description" content="Here you will find articles about Full-Stack development." />
+        </Head>
             <div className='container max-w-7xl mx-auto px-3 sm:px-6 lg:px-10 pb-16'>
                 <h1 className="text-4xl font-bold mb-16">
                     {lang === 'es'? 'Artículos' : 'Articles'}

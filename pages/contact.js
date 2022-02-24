@@ -1,3 +1,4 @@
+import Head from "next/head";
 import ContactForm from "../components/contact-form";
 import Layout from "../components/layout"
 
@@ -5,6 +6,10 @@ export default function Home() {
     let lang = 'en'
     return (
         <Layout lang={lang}>
+        <Head>
+            <title>Crevna - Programming Articles</title>
+            <meta name="description" content="If you want to contact me, please fill out this form." />
+        </Head>
         <div className="container mx-auto px-4  md:px-10">
             <h1 className="text-4xl font-bold">
                 {lang === 'es' ? 'Contacto' : 'Contact'}
