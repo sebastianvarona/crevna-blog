@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: hhtps://www.crevna.com/sitemap.xml
+Sitemap: htps://www.crevna.com/sitemap.xml
