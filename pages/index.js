@@ -85,7 +85,7 @@ export default function Home({ allPostsData }) {
                     ))}
                 </Cards>
                 <div className="flex justify-center mt-16">
-                    <Link href="/en/articles">
+                    <Link href="/articles">
                         <a><Button>All articles</Button></a>
                     </Link>
                 </div>
@@ -122,7 +122,7 @@ export default function Home({ allPostsData }) {
                     </Cards>
                     </div>
                     <div className="flex justify-center mt-16">
-                        <Link href="/en/tutorials">
+                        <Link href="/tutorials">
                             <a><Button>All tutorials</Button></a>
                         </Link>
                 </div>
