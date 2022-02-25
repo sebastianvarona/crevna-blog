@@ -43,7 +43,7 @@ export default function Post({allPostsData, postRequested}) {
                         {/* TAGS */}
                         <div className="tags d-flex flex-wrap mb-2 font-medium">
                             {tags.map((tag, index) => (
-                                <Link href={`/${postRequested.lang}/${postRequested.lang === 'es' ? 'etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
+                                <Link href={`/${postRequested.lang === 'es' ? 'es/etiqueta' : 'tag'}/${tag.toLowerCase()}`} key={index}>
                                     <a className="text-accent text-sm hover:underline mr-4">{tag}</a>
                                 </Link>
                             ))}
