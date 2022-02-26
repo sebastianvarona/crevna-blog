@@ -7,9 +7,9 @@ lang: 'es'
 category: 'article'
 ---
 
-Uno de los primeros problemas que los desarrolladores enfrentan a la hora de desarrollar una aplicación. Es decidir que tipo de dase de datos les conviene utilizar.  Inclusive, puede que toda su carrera sólo hayan utilizado un tipo de estas y nunca se detuvieron a pensar si estaban usando la correcta. 
+Uno de los primeros problemas que los desarrolladores enfrentan a la hora de desarrollar una aplicación. Es decidir que tipo de base de datos les conviene utilizar.  Inclusive, puede que toda su carrera sólo hayan utilizado un tipo de estas y nunca se detuvieron a pensar si estaban usando la correcta. 
 
-Sabemos que los dos principales tipos de bases de datos son las Relacionales (SQL) y las No Relacionales (NoSQL). Para entender un poco mejor que es SQL y NoSQL el primero se usa para las bases de datos relacionales, mientras que el segundo para las no relacionales. Una base de datos relacional es una donde los datos que están almacenados en esta están relacionados con otros datos. Por el otro lado una base de datos no relacional es exactamente lo opuesto.
+Sabemos que los dos principales tipos de bases de datos son las Relacionales (SQL) y las No Relacionales (NoSQL). Una base de datos relacional es una donde los datos que están almacenados en esta están relacionados con otros datos. Por el otro lado una base de datos no relacional es exactamente lo opuesto.
 
 ## Bases de datos Relacionales (SQL)
 Estas son colecciones de datos organizadas en forma de tablas, que contienen filas, columnas y celdas tal y como funciona un libro de *Excel* en un acercamiento muy generalizado. Cada tabla de la base de datos debe contar con una columna que almacene llaves primarias que van servir de identificador de cada una de las filas de la tabla. Este identificador es lo que luego va a servir de medio para establecer las relaciones entre las entidades o tablas de la base de datos.

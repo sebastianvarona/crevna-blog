@@ -7,9 +7,9 @@ lang: 'en'
 category: 'article'
 ---
 
-One of the first problems that developers face when developing an application. It is deciding what type of data class is best for them to use. In fact, they may have only used one type of these all their careers and never stopped to think if they were using the right one.
+One of the first problems that developers face when developing an application. It is deciding what type of database is best for them to use. In fact, they may have only used one type of these all their careers and never stopped to think if they were using the right one.
 
-We know that the two main types of databases are Relational (SQL) and Non-Relational (NoSQL). To better understand what SQL and NoSQL are, the former is used for relational databases, while the latter is used for non-relational ones. A relational database is one where the data that is stored in it is related to other data. On the other hand, a non-relational database is exactly the opposite.
+We know that the two main types of databases are Relational (SQL) and Non-Relational (NoSQL). A relational database is one where the data that is stored in it is related to other data. On the other hand, a non-relational database is exactly the opposite.
 
 ## Relational Databases (SQL)
 These are collections of data organized in the form of tables, containing rows, columns and cells just like an *Excel* workbook works in a very generalized approach. Each table in the database must have a column that stores primary keys that will serve as an identifier for each of the rows in the table. This identifier is what will later serve as a means to establish relationships between entities or tables in the database.
