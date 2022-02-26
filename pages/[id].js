@@ -53,7 +53,7 @@ export default function Post({allPostsData, postRequested}) {
                         {/* Date */}
                         <span className='font-light text-sm text-tcolor'>{postRequested.date.replace('-','/').replace('-','/')}</span>
                         <div className='bg-border rounded-lg relative aspect-16/9 overflow-hidden mb-12 mt-4'>
-                            <Image alt='thumbnail' src={`/images/${postRequested.img}`} layout='fill' objectFit='cover' />
+                            <Image alt='thumbnail' src={`/images/${postRequested.img}`} width={736} height={414} layout='fill' objectFit='cover' />
                         </div>
                         <div>
                         <ReactMarkdown renderers={{"image": Image}}>
