@@ -102,7 +102,7 @@ export default function Home({ allPostsData }) {
                                 <CardOne 
                                     slug={tutorial.id} 
                                     key={tutorial.id}
-                                    img={<Image alt='thumbnail' src={`/images/${tutorial.img}`} width={382} height={239} objectFit="cover" objectFit="cover" layout='fill' />}
+                                    img={<Image alt='thumbnail' src={`/images/${tutorial.img}`} width={382} height={239} objectFit="cover" layout='fill' />}
                                 >
                                     <span className="text-xs">{tutorial.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                     <div className="tags d-flex flex-wrap">
