@@ -55,7 +55,7 @@ export default function Home({ allPostsData }) {
                     extract="Lorem ninja ipsum dolor sit ame, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat."
                     // slug={heroArticle.frontmatter.slug}
                     slug={articles[0].id}
-                    img={<Image alt='thumbnail' src={`/images/${articles[0].img}`} objectFit="cover" layout='fill' />}
+                    img={<Image alt='thumbnail' src={`/images/${articles[0].img}`} width={576} height={360} objectFit="cover" layout='fill' priority />}
                 />
 
                 <div className="py-4"></div>
@@ -66,7 +66,7 @@ export default function Home({ allPostsData }) {
                             <CardOne 
                                 slug={article.id} 
                                 key={article.id}
-                                img={<Image alt='thumbnail' src={`/images/${article.img}`} objectFit="cover" layout='fill' />}
+                                img={<Image alt='thumbnail' src={`/images/${article.img}`} width={382} height={239} objectFit="cover" layout='fill' />}
                             >
                                 <span className="text-xs">{article.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                 <div className="tags d-flex flex-wrap">
@@ -102,7 +102,7 @@ export default function Home({ allPostsData }) {
                                 <CardOne 
                                     slug={tutorial.id} 
                                     key={tutorial.id}
-                                    img={<Image alt='thumbnail' src={`/images/${tutorial.img}`} objectFit="cover" layout='fill' />}
+                                    img={<Image alt='thumbnail' src={`/images/${tutorial.img}`} width={382} height={239} objectFit="cover" objectFit="cover" layout='fill' />}
                                 >
                                     <span className="text-xs">{tutorial.date.substring(0,10).replace('-', '/').replace('-', '/') }</span>
                                     <div className="tags d-flex flex-wrap">
