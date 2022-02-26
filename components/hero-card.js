@@ -35,7 +35,7 @@ export default function HeroCard({lang, date, tags, title, extract, slug, img}) 
                     {/* <p className="font-light pb-8">{extract}</p> */}
                     <Link href={slugPath}>
                         <a className='hidden md:block'><Button>
-                            {lang === 'es' ? 'Leer más' : 'Read more'}
+                            {lang === 'es' ? 'Leer artículo' : 'Read article'}
                         </Button></a>
                     </Link>
                 </div>
