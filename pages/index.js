@@ -57,12 +57,15 @@ export default function Home({ allPostsData }) {
                     slug={articles[0].id}
                     img={<Image alt='thumbnail' src={`/images/${articles[0].img}`} width={576} height={360} objectFit="cover" layout='fill' priority />}
                 />
+            <hr className='md:hidden border-border mt-8' />
+
 
                 <div className="py-4"></div>
 
                 {/* Next Articles */}
                 <Cards>
                     {articles.slice(1, 4).map(article => (
+                            <>
                             <CardOne 
                                 slug={article.id} 
                                 key={article.id}
@@ -82,6 +85,8 @@ export default function Home({ allPostsData }) {
                                     </a>
                                 </Link>
                             </CardOne>
+                            <hr className='md:hidden border-border' />
+                            </>
                     ))}
                 </Cards>
                 <div className="flex justify-center mt-16">
