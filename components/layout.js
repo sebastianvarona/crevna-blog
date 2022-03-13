@@ -20,7 +20,7 @@ export default function Layout({lang, children}) {
                 <img src='/images/logo-text.svg' alt="crevna" className="h-6" />
 				
                 <p className="text-tcolor text-center mt-5">
-					{lang === 'es' ? 'Hecho por Sebastian Varona' : 'Crafted by Sebastian Varona'}
+					{lang === 'es' ? 'Hecho por Sebastián Varona' : 'Crafted by Sebastián Varona'}
                 </p>
             </footer>
 		</div>
